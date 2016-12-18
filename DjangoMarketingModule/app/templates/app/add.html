@@ -1,0 +1,16 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<h1>Add an E-mail Address</h1>
+
+<form action="add.html" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit" />
+</form>
+
+{% endblock %}

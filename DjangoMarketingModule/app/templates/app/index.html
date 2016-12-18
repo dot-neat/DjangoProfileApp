@@ -1,0 +1,20 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+{% load staticfiles %}
+
+  
+<h1 class="text-center">Welcome to Profile Storage App</h1>
+
+<div class="row">
+    <div class="col-md-6">       
+       <a href="add.html"><img alt="Add Email" id="add_email_img" src="{% static 'app/images/add_email.jpg' %}" /></a>  <br />
+        <a href="add.html">Add an e-mail address</a><br />                       
+    </div>    
+      <div class="col-md-6">
+         <a href="list.html"><img alt="List Email" id="list_email_img" src="{% static 'app/images/list_email.jpg' %}" /></a> <br />
+          <a href="list.html">View list of e-mail addresses</a>
+          </div>
+</div>
+
+{% endblock %}
